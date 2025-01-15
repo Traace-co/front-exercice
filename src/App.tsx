@@ -1,12 +1,16 @@
-import { Typography } from "antd";
+import React from 'react';
+import { Layout } from 'antd';
+import MovieTable from './components/MovieTable';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <Typography.Title>Traace Exercice</Typography.Title>
-    </div>
+    <Layout style={{ padding: '24px' }}>
+      <Layout.Content>
+        <h1>Best Movies</h1>
+        <MovieTable />
+      </Layout.Content>
+    </Layout>
   );
-}
+};
 
-export default App
-
+export default App;
